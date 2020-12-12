@@ -75,7 +75,7 @@ author:
 social-network-links:
 #  rss: true
   email: "sameerahmad.dba@gmail.com"
-  facebook: "social.muthuraj.me"
+#  facebook: "social.muthuraj.me"
   github: "quiescentsam"
   twitter: "listentosam"
 #  reddit: yourname
@@ -99,7 +99,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "work@muthuraj.me"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "sameerahmad.dba@gmail.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
