@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Hi, I'm Sameer
+title: Sameer Ahmad Siddiqui
 subtitle: Make impossible possible make possible easy and the easy elegant !
 use-site-title: true
 bigimg:
-  - "/img/clicks/antelope_canyon_sep2019.jpg" : "Antelope Canyon [Sep 2019]"
-  - "/img/clicks/kanyakumari_jul2019.jpg" : "Kanyakumari [Jul 2019]"
-  - "/img/clicks/fred_howard_park_jan2019.jpg" : "Fred Howard Park [Jan 2019]"
+  - "/img/clicks/antelope_canyon_sep2019.jpg" : "Antelope Canyon"
+  - "/img/clicks/kanyakumari_jul2019.jpg" : "Kanyakumari"
+  - "/img/clicks/fred_howard_park_jan2019.jpg" : "Fred Howard Park"
 comments: false
 ---
 <h1 class="text-center">Recent Posts</h1>
