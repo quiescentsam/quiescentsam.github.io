@@ -4,7 +4,7 @@ title: Application Template for Spark Scala with Gradle
 subtitle: Sharing my tips for developing an application on local desktop and automating the complete build process using Apache Spark with Scala
 image: /img/posts/2020/blog-1-spark-template.png
 permalink: /blog/spark-scala-template/
-date: 2020-04-08 13:00:00 -0400
+date: 2019-04-08 13:00:00 -0400
 tags: [apache spark, scala, gradle, project template, local development]
 ---
 
