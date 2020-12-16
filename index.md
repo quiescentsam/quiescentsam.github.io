@@ -9,6 +9,12 @@ bigimg:
   - "/img/clicks/fred_howard_park_jan2019.jpg" : "Fred Howard Park"
 comments: false
 ---
+
+like to solve problems.
+
+<div class="spacer"></div>
+
+
 <h1 class="text-center">Recent Posts</h1>
 <div class="spacer"></div>
 
