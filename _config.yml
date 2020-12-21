@@ -29,7 +29,7 @@ navbar-links:
     - Devops: "notes/devops"
     - Orchestration: "notes/orchestration"
     - Web Hosting: "notes/webhosting"
-  About: "Resume"
+  Resume: "aboutme"
   Search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
