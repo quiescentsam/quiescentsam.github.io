@@ -5,6 +5,7 @@ subtitle: Sharing my tips for developing an application on local desktop and aut
 image: /img/posts/2020/blog-1-spark-template.png
 permalink: /blog/spark-scala-template/
 date: 2019-04-08 13:00:00 -0400
+comments: true
 tags: [apache spark, scala, gradle, project template, local development]
 ---
 
