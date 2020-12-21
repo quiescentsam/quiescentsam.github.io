@@ -9,7 +9,7 @@ bigimg:
   - "/img/clicks/fred_howard_park_jan2019.jpg" : "Fred Howard Park"
 comments: false
 ---
-
+<script data-ad-client="ca-pub-9559224448465661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 like to solve problems.
 
 <div class="spacer"></div>
