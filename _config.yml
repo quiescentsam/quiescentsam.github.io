@@ -23,13 +23,13 @@ navbar-links:
   Blog:
     - Posts: "blog"
     - Tags: "tags"
-  Projects: "https://github.com/quiescentsam"
+#  Projects: "https://github.com/quiescentsam"
   Quick Notes:
     - Big Data: "notes/bigdata"
     - Devops: "notes/devops"
     - Orchestration: "notes/orchestration"
     - Web Hosting: "notes/webhosting"
-  About: "aboutme"
+  About: "Resume"
   Search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
