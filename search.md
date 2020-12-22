@@ -1,5 +1,5 @@
 ---
-layout: no-title-post
+layout: page
 subtitle: Feeling lost? Look for things in my blog.
 ---
 ## Search sameerahmad.net
