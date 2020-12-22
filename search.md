@@ -1,6 +1,7 @@
 ---
 layout: page
 subtitle: Feeling lost? Look for things in my blog.
+layout: no-title-post
 ---
 ## Search sameerahmad.net
 
