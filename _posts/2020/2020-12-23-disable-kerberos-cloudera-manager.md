@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable kerberos in a CDH cluster
-subtitle: Dekerberization of hadoop cluster
+subtitle: Sharing my experience and steps followed for Dekerberization of hadoop cluster
 permalink: /blog/disable-kerberos-on-CDH
 date: 2020-12-23 00:00:00 -0400
 comments: true
@@ -69,6 +69,13 @@ Along with the Cluster changes, after disabling Kerberos, some code changes are 
 * **Spark** - in spark-submit, flag for `--keytab` and `--principal`  need to removed from the command
 * **Oozie** - Add config `user.name` to workflow config to make user actions are executed as the specified user.
 
+There are more changes based on different access patterns to cluster, but most of the changes follow either of these two themes.
+
+1. Ignore or remove the parameters which passes the kerberos principal and keytab for authentication to the service.
+2. Since on a kerberos cluster, principal specifies the identification on user which is trying to access to cluster services, hence after removing the kerberos authentication, we need to add parameters like `user.name` or define the environment variable `HADOOP_USER_NAME` 
+
+
+So, this is my experience for un kerberising the hadoop cluster, please let me know if you find this helpful and share your experiences.
 
 
 
