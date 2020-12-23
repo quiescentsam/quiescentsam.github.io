@@ -32,9 +32,9 @@ I have covered the changes made to cluster configuration through Cloudera manage
 | HDFS | Data Directory Permissions | from 700 to 755|
 | Hbase | `hbase.security.authentication` | Simple|
 | Hbase | `hbase.security.authorization` | Simple|
-| Solr | Solr Secure Authentication | simple|
-| Kafka | kerberos.auth.enable | Stop and delete Role|
-| Hue | Kerberos Ticket Renewer | False|
+| Solr | Solr Secure Authentication | Simple|
+| Kafka | kerberos.auth.enable | False|
+| Hue | Kerberos Ticket Renewer | Stop and delete Role|
 
 After removing kerberos authentication, to maintain the behavior in which all yarn container are executed as user submitting the yarn job and not as `nobody` user, we have to make changes in below parameters.   
 
