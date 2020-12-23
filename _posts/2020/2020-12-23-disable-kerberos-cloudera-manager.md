@@ -36,15 +36,16 @@ I have covered the changes made to cluster configuration through Cloudera manage
 | Kafka | kerberos.auth.enable | Stop and delete Role|
 | Hue | Kerberos Ticket Renewer | False|
 
-After removing kerberos authentication, to maintain the behavior in which all yarn container are executed as user submitting the yarn job and not as `nobody` user, we have to make changes in below parameters.
+After removing kerberos authentication, to maintain the behavior in which all yarn container are executed as user submitting the yarn job and not as `nobody` user, we have to make changes in below parameters.   
+
 
 | Service | Property Name | Property Value|
 | ------:| -----------:|-----------:|
 | Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user` | yarn|
 | Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users` | false|
 
-In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking the parameter in Cloudera Manager, just edit parameter `YARN Service Advanced Configuration Snippet (Safety Valve)` for yarn-site.xml
 
+In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking the parameter in Cloudera Manager, just edit parameter `YARN Service Advanced Configuration Snippet (Safety Valve)` for yarn-site.xml
 
 * As we are removing kerberos authentication, we have to get need to stop and delete Sentry which provides authorization. Before stopping and deleting the sentry service, make below changes in the configuration.
 
@@ -55,6 +56,7 @@ In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking th
 | Impala | Sentry Service | none|
 | Hue | Sentry Service | none|
 | Kafka | Sentry Service | none|
+
 
 
 * Clear yarn usercache - follow the steps detailed here in
