@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable kerberos in a CDH cluster
-subtitle: Dekerberization of CDH cluster
+subtitle: Dekerberization of hadoop cluster
 permalink: /blog/disable-kerberos-on-CDH/
 date: 2020-12-23 00:00:00 -0400
 comments: true
@@ -11,13 +11,16 @@ tags: [hadoop, CDH, kerberos]
 
 ---
 
-I am sure the first question arising in any sane person's mind is why are we doing it? normally everyone goes the other way, we want to make the cluster more secure and kerberize the cluster.  And here I am going the other way.
+I am sure the first question arising in any sane person's mind is why are we doing it? normally everyone goes the other way, we would want to make our cluster more secure and kerberize the cluster.  And here I am, going the other way. It is due to change in how we want to use the clusters in the future.
 
-* our clusters are no-more multi-tenant 
-* We used Redhat's IPA as our Identity Provider and since we were moving to Centos, we wanted to get rid on IPA as well
+* All of our clusters are no-more multi-tenant, so losing authorization was lesser of a concern. We no longer needed to secure data between applications.
+* We used Redhat's IPA as our Identity Provider and since we were moving to Centos, we wanted to get rid on IPA as well.
+
+I have covered the changes made to cluster configuration through Cloudera manager, but I am sure same changes can be easily made using Ambari as well.
+
 
 ---
-## Cloudera Manager Properties to change
+## Hadoop Properties to change
 
 | Role | Property Name | Property Value|
 | ------:| -----------:|-----------:|
@@ -33,11 +36,15 @@ I am sure the first question arising in any sane person's mind is why are we doi
 | Solr | Solr Secure Authentication | simple|
 | Kafka | kerberos.auth.enable | Stop and delete Role|
 | Hue | Kerberos Ticket Renewer | False|
+
+After removing kerberos authentication, to maintain the behavior in which all yarn container are executed as user submitting the yarn job and not as `nobody` user, we have to make changes in below parameters.
+
+| Role | Property Name | Property Value|
+| ------:| -----------:|-----------:|
 | Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user` | yarn|
 | Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users` | false|
 
-
-YARN Service Advanced Configuration Snippet (Safety Valve) for yarn-site.xml
+In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking the parameter in Cloudera Manager, just edit parameter `YARN Service Advanced Configuration Snippet (Safety Valve)` for yarn-site.xml
 
 
 
