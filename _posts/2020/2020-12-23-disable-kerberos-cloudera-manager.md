@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable kerberos in a CDH cluster
-subtitle: Dekerberization
+subtitle: Dekerberization of CDH cluster
 permalink: /blog/disable-kerberos-on-CDH/
 date: 2020-12-23 00:00:00 -0400
 comments: true
@@ -51,13 +51,16 @@ There are few more properties we need to change
 
 ## Post actions
 
-* clear cache
+* clear cache - follow the steps detailed here in
+  [Cloudera community](https://community.cloudera.com/t5/Community-Articles/How-to-clear-local-file-cache-and-user-cache-for-yarn/ta-p/245160 "community article")
 
 ## Code changes
 
 * Impala
 * hive
 * spark
+
+
 
 
 ---
