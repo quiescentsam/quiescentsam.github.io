@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Sample title
-subtitle: what is it about
-image: /img/posts/2020/blog-1-spark-template.png 
-permalink: /blog/blog-template/
-date: 2030-01-01 00:00:00 -0400
+title: How to disable kerberos in a CDH cluster
+subtitle: Dekerberization
+permalink: /blog/disable-kerberos-on-CDH/
+date: 2020-12-23 00:00:00 -0400
 comments: true
 published: false
 categories: []
-tags: [blog]
+tags: [hadoop, CDH, kerberos]
 
 ---
 
