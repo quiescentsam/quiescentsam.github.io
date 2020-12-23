@@ -2,7 +2,7 @@
 layout: page
 subtitle: Feeling lost? Look for things in my blog.
 ---
-## Search sameerahmad.net
+
 
 This blog uses [google search](http://google.com/cse).
 
