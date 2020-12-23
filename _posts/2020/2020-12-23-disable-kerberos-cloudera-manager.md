@@ -2,7 +2,7 @@
 layout: post
 title: How to disable kerberos in a CDH cluster
 subtitle: Dekerberization of hadoop cluster
-permalink: /blog/disable-kerberos-on-CDH/
+permalink: /blog/disable-kerberos-on-CDH
 date: 2020-12-23 00:00:00 -0400
 comments: true
 published: true
