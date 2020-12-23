@@ -5,14 +5,59 @@ subtitle: Dekerberization
 permalink: /blog/disable-kerberos-on-CDH/
 date: 2020-12-23 00:00:00 -0400
 comments: true
-published: false
+published: true
 categories: []
 tags: [hadoop, CDH, kerberos]
 
 ---
 
-  **Bold**
-[**Gradle**][98d0a221] link 
+I am sure the first question arising in any sane person's mind is why are we doing it? normally everyone goes the other way, we want to make the cluster more secure and kerberize the cluster.  And here I am going the other way.
+
+* our clusters are no-more multi-tenant 
+* We used Redhat's IPA as our Identity Provider and since we were moving to Centos, we wanted to get rid on IPA as well
+
+---
+## Cloudera Manager Properties to change
+
+| Role | Property Name | Property Value|
+| ------:| -----------:|-----------:|
+| Zookeeper   | `enableSecurity (Enable Kerberos Authentication)` | False (uncheck)|
+| HDFS | `hadoop.security.authentication` | Simple|
+| HDFS | `hadoop.security.authorization` | False (uncheck)|
+| HDFS | `dfs.datanode.address` | from 1004 (for Kerberos) to 50010 (default)|
+| HDFS | `dfs.datanode.http.address` | from 1006 (for Kerberos) to 50075 (default)|
+| HDFS | Data Directory Permissions | from 700 to 755|
+| Hbase | `hbase.security.authentication` | Simple|
+| Hbase | `hbase.security.authorization` | Simple|
+| Solr | Sentry Service | none|
+| Solr | Solr Secure Authentication | simple|
+| Kafka | kerberos.auth.enable | Stop and delete Role|
+| Hue | Kerberos Ticket Renewer | False|
+| Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user` | yarn|
+| Yarn | `yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users` | false|
+
+
+YARN Service Advanced Configuration Snippet (Safety Valve) for yarn-site.xml
+
+
+
+There are few more properties we need to change
+
+| Role | Property Name | Property Value|
+| ------:| -----------:|-----------:|
+| Zookeeper   | `enableSecurity (Enable Kerberos Authentication)` | `False`|
+| HDFS | `hadoop.security.authentication` | Simple|
+| ext    | extension to be used for dest files. |
+
+## Post actions
+
+* clear cache
+
+## Code changes
+
+* Impala
+* hive
+* spark
 
 
 ---
