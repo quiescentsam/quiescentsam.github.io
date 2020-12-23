@@ -47,7 +47,7 @@ After removing kerberos authentication, to maintain the behavior in which all ya
 
 In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking the parameter in Cloudera Manager, just edit parameter `YARN Service Advanced Configuration Snippet (Safety Valve)` for yarn-site.xml
 
-* As we are removing kerberos authentication, we have to get need to stop and delete Sentry which provides authorization. Before stopping and deleting the sentry service, make below changes in the configuration.
+As we are removing kerberos authentication, we have to get need to stop and delete Sentry which provides authorization. Before stopping and deleting the sentry service, make below changes in the configuration.
 
 | Service | Property Name | Property Value|
 | ------:| -----------:|-----------:|
@@ -59,14 +59,15 @@ In CDH 5.11 , second parameter needs to set in safety and NOT just unchecking th
 
 
 
-* Clear yarn usercache - follow the steps detailed here in
-  [Cloudera community](https://community.cloudera.com/t5/Community-Articles/How-to-clear-local-file-cache-and-user-cache-for-yarn/ta-p/245160 "community article") Delete the cache on all nodes and all the usercache carefully on all the nodes, here is a sample command I used on the hosts with nodemanager roles `rm -rf  /mnt/dsk/*/yarn/nm/usercache/*'`
+**Clear yarn usercache** - follow the steps detailed here in
+  [Cloudera community article.](https://community.cloudera.com/t5/Community-Articles/How-to-clear-local-file-cache-and-user-cache-for-yarn/ta-p/245160 "community article") Delete the cache on all nodes and all the usercache carefully on all the nodes, here is a sample command I used on the hosts with nodemanager roles `rm -rf  /mnt/dsk/*/yarn/nm/usercache/*'`
 
-## Code changes
 
-* Impala
-* hive
-* spark
+Along with the Cluster changes, after disabling Kerberos, some code changes are also required. All users interacting with the cluster need to update the configs.
+
+* **Impala** - impala-shell connection need to remove -k flag while connecting to impala
+* **Spark** - in spark-submit, flag for `--keytab` and `--principal`  need to removed from the command
+* **Oozie** - Add config `user.name` to workflow config to make user actions are executed as the specified user.
 
 
 
