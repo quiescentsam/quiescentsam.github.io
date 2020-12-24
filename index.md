@@ -7,6 +7,7 @@ bigimg:
   - "/img/clicks/antelope_canyon_sep2019.jpg" : "Antelope Canyon"
   - "/img/clicks/kanyakumari_jul2019.jpg" : "Kanyakumari"
   - "/img/clicks/fred_howard_park_jan2019.jpg" : "Fred Howard Park"
+  - "/img/clicks/jaipur-2017.jpeg" : "Jaipur-India"
 comments: false
 ---
 <script data-ad-client="ca-pub-9559224448465661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
