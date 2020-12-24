@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Use of jq in aws cli
+show-avatar : false
 permalink: /blog/awscli-with-jq
 date: 2017-07-19 00:00:00 -0400
 comments: true

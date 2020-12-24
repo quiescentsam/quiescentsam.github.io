@@ -2,6 +2,7 @@
 layout: post
 title: Sample title
 subtitle: what is it about
+show-avatar : false
 image: /img/posts/2020/blog-1-spark-template.png 
 permalink: /blog/blog-template/
 date: 2030-01-01 00:00:00 -0400
