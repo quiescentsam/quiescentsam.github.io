@@ -17,6 +17,8 @@ I am sure the first question arising in any sane person's mind is why are we doi
 * All of our clusters are no-more multi-tenant, so losing authorization was lesser of a concern. We no longer needed to secure data between applications.
 * We used Redhat's IPA as our Identity Provider and since we were moving to Centos, we wanted to get rid on IPA as well.
 
+An important point to keep in mind is that, authorization does not work without authentication, for obvious reasons. So, removing kerberos means, we no longer can use Sentry as well for granting access to databases and table.
+
 I have covered the changes made to cluster configuration through Cloudera manager, but I am sure same changes can be easily made using Ambari as well.
 
 
@@ -61,7 +63,7 @@ As we are removing kerberos authentication, we have to get need to stop and dele
 
 
 **Clear yarn usercache** - follow the steps detailed here in
-  [Cloudera community article.](https://community.cloudera.com/t5/Community-Articles/How-to-clear-local-file-cache-and-user-cache-for-yarn/ta-p/245160 "community article") Delete the cache on all nodes and all the usercache carefully on all the nodes, here is a sample command I used on the hosts with nodemanager roles `rm -rf  /mnt/dsk/*/yarn/nm/usercache/*'`
+  [Cloudera community article.](https://community.cloudera.com/t5/Community-Articles/How-to-clear-local-file-cache-and-user-cache-for-yarn/ta-p/245160 "community article") Delete the  all the usercache carefully on all the nodes and all directories, here is a sample command I used on the hosts with nodemanager roles `rm -rf  /mnt/dsk/*/yarn/nm/usercache/*'`
 
 
 Along with the Cluster changes, after disabling Kerberos, some code changes are also required. All users interacting with the cluster need to update the configs.
