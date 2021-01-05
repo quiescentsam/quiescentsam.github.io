@@ -24,11 +24,12 @@ navbar-links:
     - Posts: "blog"
     - Tags: "tags"
 #  Projects: "https://github.com/quiescentsam"
-  Quick Notes:
-    - Big Data: "notes/bigdata"
-    - Devops: "notes/devops"
-    - Orchestration: "notes/orchestration"
-    - Web Hosting: "notes/webhosting"
+#  Quick Notes:
+#    - Big Data: "notes/bigdata"
+#    - Devops: "notes/devops"
+#    - Orchestration: "notes/orchestration"
+#    - Web Hosting: "notes/webhosting"
+  Personal Blog: "blog"
   Resume: "resume"
   Search: "search"
 
@@ -178,23 +179,23 @@ paginate_path: "/blog/page:num/"
 kramdown:
   input: GFM
 
-#collections:
-#  notes-bigdata:
-#    output: true
-#    permalink: /notes/bigdata/:name
-#    sort_by: title
-#  notes-devops:
-#    output: true
-#    permalink: /notes/devops/:name
-#    sort_by: title
-#  notes-orchestration:
-#    output: true
-#    permalink: /notes/orchestration/:name
-#    sort_by: title
-#  notes-webhosting:
-#    output: true
-#    permalink: /notes/webhosting/:name
-#    sort_by: title
+collections:
+  notes-bigdata:
+    output: true
+    permalink: /notes/bigdata/:name
+    sort_by: title
+  notes-devops:
+    output: true
+    permalink: /notes/devops/:name
+    sort_by: title
+  notes-orchestration:
+    output: true
+    permalink: /notes/orchestration/:name
+    sort_by: title
+  notes-webhosting:
+    output: true
+    permalink: /notes/webhosting/:name
+    sort_by: title
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
