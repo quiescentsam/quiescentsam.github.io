@@ -29,7 +29,7 @@ navbar-links:
 #    - Devops: "notes/devops"
 #    - Orchestration: "notes/orchestration"
 #    - Web Hosting: "notes/webhosting"
-  Personal Blog: "blog"
+  Personal Blog: "personalblog"
   Resume: "resume"
   Search: "search"
 
