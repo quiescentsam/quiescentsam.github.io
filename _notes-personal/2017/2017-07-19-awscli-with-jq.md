@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: Use of jq in aws cli
 show-avatar : false
 permalink: /blog/awscli-with-jq
