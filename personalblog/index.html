@@ -1,12 +1,12 @@
 ---
 layout: page
 title: My Personal Blog
-subtitle: Thoughts of weird mind !!
+subtitle: Thoughts of a weird mind !!
 show-avatar : true
 comments: false
 ---
 <div class="posts-list">
-  {% for post in paginator.posts %}
+  {% for post in paginator.personalposts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
