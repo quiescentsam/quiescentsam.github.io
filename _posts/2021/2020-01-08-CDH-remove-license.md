@@ -116,5 +116,5 @@ service cloudera-scm-server start
 Once Cloudera manager is started, login to Cloudera Manager and start the Cloudera Management Services. Finally, just restart the services and make sure, everything is working fine.
 
 
-When check the license page, you would notice that Cloudera Express is in use and tab for BDR(backup) is gone now.
+When we check the license page now, you would notice that Cloudera Express is in use and tab for BDR(backup) is gone now.
 
