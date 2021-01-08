@@ -15,7 +15,7 @@ tags: [cdh, license]
 Recently we wanted to remove license for one of our clusters, and we used the following approach to remove the license from the cluster. We are on CDH 5.11 which is very old and gone out of support.
 
 For planning, first step it to evaluate the licensed feature currently in use. If you are actively using any of such features, it might affect the functionality and cause major issues if not planned properly.
- In my opinion, the key features like below needs to checked 
+ on the top of my head, the key features like below needs to checked 
     
     * Rolling upgrade of CDH,
     * Manage Key Trustee and Cloudera Navigator,
