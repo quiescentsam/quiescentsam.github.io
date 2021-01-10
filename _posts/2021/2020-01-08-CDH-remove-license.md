@@ -60,7 +60,7 @@ com.cloudera.cmf.db.password=$DBPASS
 
 If DBPORT is empty, use default port 3306 for mysql, I am covering steps for Mysql and Postgres, but steps would be fairly same for other databases like oracle and MsSql as well.
 
-Start with backing up the dataabse
+Start with backing up the database
 
 ```shell
 \\For MySQL:# 
