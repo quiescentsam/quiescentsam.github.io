@@ -8,7 +8,7 @@ date: 2012-10-05 00:00:00 -0400
 comments: true
 published: true
 categories: []
-tags: [oracle , rman]
+tags: [oracle , archivelog, 11g]
 
 ---
 
