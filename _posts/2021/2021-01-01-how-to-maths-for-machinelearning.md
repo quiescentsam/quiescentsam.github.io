@@ -14,6 +14,8 @@ tags: [blog]
 
 if you have done your education long time back or like me, not paying enough attention in maths classes, you are left thinking same. Do I need to some maths class 
 
+First thinkg we want to read is linear algebra
+
 
 * eddie woo 
 * 1blue 3 brown 
