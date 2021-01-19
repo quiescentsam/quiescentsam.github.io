@@ -4,7 +4,7 @@ title: Archive log generated per day or per hour
 subtitle: This is to find the historical archive log generation report.
 show-avatar : false
 permalink: /blog/archivelog-generation
-date: 2015-10-05 00:00:00 -0400
+date: 2012-10-05 00:00:00 -0400
 comments: true
 published: true
 categories: []
