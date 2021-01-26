@@ -14,7 +14,7 @@ tags: [redshift, aws]
 
 I wanted to find a table in redshift cluster and was looking for something similar to dba_ or v$ views in oracle to find the table.
 
-Below is the query we can use.
+Below is the query we can use to find with name starting with 'table'
 
 
 ```sql
@@ -32,5 +32,5 @@ Output is below format
 
 |**table_schema**|**table_name**|
 -------  |------------- 
-|prod_schema|	prod_table|
-|prod_schema|	prod_table2|
+|prod_schema|	table|
+|prod_schema|	table2|
