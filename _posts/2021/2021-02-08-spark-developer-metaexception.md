@@ -25,4 +25,4 @@ spark.conf.set("spark.sql.hive.caseSensitiveInferenceMode", "INFER_ONLY")
 
 Once I set this, the error is gone!!!
 
-[reference link] (https://stackoverflow.com/questions/57821080/user-does-not-have-privileges-for-altertable-addcols-while-using-spark-sql-to-re)
+[Stackoverflow reference link](https://stackoverflow.com/questions/57821080/user-does-not-have-privileges-for-altertable-addcols-while-using-spark-sql-to-re)
