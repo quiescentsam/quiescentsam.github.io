@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Caused by: MetaException(message:Access Denied: ALTER_TABLE on  ""
+title: "Caused by: MetaException(message:Access Denied: ALTER_TABLE on  "
 subtitle: spark.sql.hive.caseSensitiveInferenceMode
 show-avatar : false
 permalink: /blog/spark-developer-metaexception
