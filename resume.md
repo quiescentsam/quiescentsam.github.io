@@ -2,9 +2,9 @@
 layout: page
 title: Sameer Ahmad Siddiqui
 subtitle: Solutions Architect
+permalink: /resume
 comments: false
 ---
-
 
 ### Contact
 * 813-947-8560
