@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to remove the license from a Cloudera Cluster
-subtitle: Process to remove license from a cloudera cluster
+title: How to monitor network packet drops in a Cluster
+subtitle: monitor network packet drops in cloudera cluster
 show-avatar : false
-permalink: /blog/cdh-remove-license
+permalink: /blog/cdh-network-monitor
 date: 2021-01-08 00:00:00 -0400
 comments: true
 published: true
@@ -61,7 +61,7 @@ fi
 
 
 
-
+Another simpler script
 
 ```shell
 #!/bin/bash
@@ -71,4 +71,9 @@ mv /root/monitoring_script/network_data_new /root/monitoring_script/network_data
 mailx -a /root/monitoring_script/network_data -s network_stats_$(date +%H:%M:%S-%d%h%y) to@domain.com  < /dev/null
 ```
 
+Schedule it like below in crontab
 
+```
+0 */3 * * * /root/administration/scripts/capture_network_stats.sh "Cluster name"
+0 * * * * /root/monitoring_script/network_monitor.sh > /dev/null
+```
