@@ -4,7 +4,7 @@ title: How to monitor network packet drops in a Cluster
 subtitle: monitor network packet drops in cloudera cluster
 show-avatar : false
 permalink: /blog/cdh-network-monitor
-date: 2021-01-08 00:00:00 -0400
+date: 2018-02-08 00:00:00 -0400
 comments: true
 published: true
 categories: []
