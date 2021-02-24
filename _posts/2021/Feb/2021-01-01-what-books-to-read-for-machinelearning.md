@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to learn maths for Machine learning
+title: What books to read for Machine learning
 subtitle: books For Machine Learning
 show-avatar : false
 permalink: /blog/books-for-machinelearning
