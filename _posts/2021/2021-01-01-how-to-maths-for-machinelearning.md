@@ -16,9 +16,16 @@ if you have done your education long time back or like me, not paying enough att
 
 First thinkg we want to read is linear algebra
 
+## YOUTUBE
 
 * eddie woo 
 * 1blue 3 brown 
+
+## BOOKS
+
+* Mathematics for Machine learning - Deisenroth, Faisal and Soon (Used in Stanford 228)
+* All of Statistics - Wasserman
+
 
 ---
 __Advertisement :)__
