@@ -34,3 +34,23 @@ Output is below format
 -------  |------------- 
 |prod_schema|	table|
 |prod_schema|	table2|
+
+
+Furthermore, if we want to find the owner of the tables also, we can use below query also
+
+```sql
+SELECT n.nspname AS schema_name
+ , pg_get_userbyid(c.relowner) AS table_owner
+ , c.relname AS table_name
+ , CASE WHEN c.relkind = 'v' THEN 'view' ELSE 'table' END 
+   AS table_type
+ , d.description AS table_description
+ FROM pg_class As c
+ LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
+ LEFT JOIN pg_tablespace t ON t.oid = c.reltablespace
+ LEFT JOIN pg_description As d 
+      ON (d.objoid = c.oid AND d.objsubid = 0)
+ WHERE c.relkind IN('r', 'v') 
+ AND c.relname like '%table_name%'
+ORDER BY n.nspname, c.relname ;
+```

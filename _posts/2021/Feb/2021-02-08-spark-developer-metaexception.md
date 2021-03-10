@@ -6,7 +6,7 @@ show-avatar : false
 permalink: /blog/spark-developer-metaexception
 date: 2021-02-02 00:15:00 -0400
 comments: true
-published: true
+published: false
 categories: []
 tags: [spark, aws]
 
