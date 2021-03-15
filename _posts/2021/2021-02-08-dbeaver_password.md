@@ -3,16 +3,18 @@ layout: post
 title: "Caused by: MetaException(message:Access Denied: ALTER_TABLE on  "
 subtitle: spark.sql.hive.caseSensitiveInferenceMode
 show-avatar : false
-permalink: /blog/spark-developer-metaexception
-date: 2021-02-02 00:15:00 -0400
+permalink: /blog/dbeaver-password
+date: 2021-03-15 00:15:00 -0400
 comments: true
-published: false
+published: true
 categories: []
-tags: [spark, aws]
+tags: [database, dbeaver]
 
 ---
 
+For most of my database connections and day to day sql use, I use a community edition of a sortware Dbeaver. Dbeaver stores all password locally in this file `~/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json` but encrypts it.
 
+Use the below Java code to decrypt it and get to your passwords.
 
 ```java
 import javax.crypto.*;
@@ -66,6 +68,9 @@ javac DecryptDbeaver.java
 extract the password 
 ```shell
 java DecryptDbeaver ~/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json
-{"dbeaver-sample-database-sqlite-1":{"#connection":{}},"presto_jdbc-17396bcfd9c-1e2791d6bfb34cd3":{"#connection":{"user":"sameer.siddiqui","password":"fd638697f2ab485f9c7fc46ef7876428"}}
+{"dbeaver-sample-database-sqlite-1":{"#connection":{}},"presto_jdbc-17396bcfd9c-1e2791d6bfb34cd3":{"#connection":{"user":"sameer","password":"fd638697f2ac46ef7876428"}}
 ```
 
+
+
+This page have more details about the decrypt obtions for windows and other versions (here)[https://stackoverflow.com/questions/39928401/recover-db-password-stored-in-my-dbeaver-connection]
