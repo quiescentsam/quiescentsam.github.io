@@ -73,4 +73,4 @@ java DecryptDbeaver ~/Library/DBeaverData/workspace6/General/.dbeaver/credential
 
 
 
-This page have more details about the decrypt obtions for windows and other versions (here)[https://stackoverflow.com/questions/39928401/recover-db-password-stored-in-my-dbeaver-connection]
+This page have more details about the decrypt obtions for windows and other versions [here][https://stackoverflow.com/questions/39928401/recover-db-password-stored-in-my-dbeaver-connection]
