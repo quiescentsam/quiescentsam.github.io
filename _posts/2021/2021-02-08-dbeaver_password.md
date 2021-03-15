@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Caused by: MetaException(message:Access Denied: ALTER_TABLE on  "
-subtitle: spark.sql.hive.caseSensitiveInferenceMode
+title: "How to retrieve stored password in Dbeaver"
+subtitle: 
 show-avatar : false
 permalink: /blog/dbeaver-password
 date: 2021-03-15 00:15:00 -0400
