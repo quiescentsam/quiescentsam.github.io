@@ -40,7 +40,7 @@ bash-5.1$ conda config --set ssl_verify no
 
 
 Installing pip dependencies: \ Ran pip subprocess with arguments:
-['/Users/ssiddiqui1/opt/anaconda3/envs/ml4t/bin/python', '-m', 'pip', 'install', '-U', '-r', '/Users/ssiddiqui1/Desktop/SAMEER/MS/CS7646-ML4T/condaenv.e4ps7sbf.requirements.txt']
+['/Users/ssiddiqui1/opt/anaconda3/envs/ml4t/bin/python', '-m', 'pip', 'install', '-U', '-r', '/Users//Desktop/SAMEER/MS/CS7646-ML4T/condaenv.e4ps7sbf.requirements.txt']
 Pip subprocess output:
 Could not fetch URL https://pypi.org/simple/pprofile/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pprofile/ (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),)) - skipping
 Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)'),)) - skipping
