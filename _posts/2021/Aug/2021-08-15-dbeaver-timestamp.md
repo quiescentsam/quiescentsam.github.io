@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to change Timezone setting for Dbeaver on your Laptop"
-subtitle: Dbeaver settigns 
 show-avatar : false
 permalink: /blog/dbeaver-timezone
 date: 2021-08-15 00:16:00 -0400
