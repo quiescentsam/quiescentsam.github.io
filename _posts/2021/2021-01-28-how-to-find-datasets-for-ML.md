@@ -25,3 +25,11 @@ link to google scholar where data is cited
 * http://snap.stanford.edu/data/
 * https://kevinchai.net/datasets
 * http://www.cvlibs.net/datasets/kitti/index.php
+
+## Dataset I use
+
+chess
+https://www.kaggle.com/aharon1377/lichess-games-played-in-the-first-trimester-2020
+
+
+https://www.kaggle.com/datasnaek/chess

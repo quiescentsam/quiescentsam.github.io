@@ -12,21 +12,16 @@ tags: [blog]
 
 ---
 
-if you have done your education long time back or like me, not paying enough attention in maths classes, you are left thinking same. Do I need to some maths class 
 
-First thinkg we want to read is linear algebra
 
-## YOUTUBE
+## blogs
 
-* eddie woo 
-* 1blue 3 brown 
+https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2
 
-## BOOKS
 
-* Mathematics for Machine learning - Deisenroth, Faisal and Soon (Used in Stanford 228)
-* All of Statistics - Wasserman
+## you tube vidoes to watch
+https://www.youtube.com/watch?app=desktop&v=wVXXLLT6srY
 
-https://towardsdatascience.com/5-online-resources-to-learn-data-science-2633829b20a6
 ---
 __Advertisement :)__
 

@@ -41,6 +41,7 @@ Text book
 ### Other curated list: 
 
 https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md
+https://towardsdatascience.com/data-science-and-ai-books-for-2021-b8665856cb9e
 
 
 
