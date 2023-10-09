@@ -1,10 +1,11 @@
 ---
 layout: post
-title: How to learn maths for Machine learning
-subtitle: what is it about
+title: How to test your model
+subtitle: Model Metrics
 show-avatar : false
-permalink: /blog/maths-for-datascience
-date: 2021-01-01 00:00:00 -0400
+image: /img/posts/2020/blog-1-spark-template.png 
+permalink: /blog/model-metrics/
+date: 2030-01-01 00:00:00 -0400
 comments: true
 published: false
 categories: []
@@ -12,48 +13,26 @@ tags: [blog]
 
 ---
 
-## main review 
-https://learn.hashicorp.com/tutorials/terraform/associate-review
-
-## blogs
-
-https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2
-
-* https://medium.com/bb-tutorials-and-thoughts/how-to-pass-hashicorp-terraform-associate-certification-d3620d04523e
-## you tube vidoes to watch
-https://www.youtube.com/watch?app=desktop&v=wVXXLLT6srY
+# How to check model metrics
 
 
-## Sample questions
+This is for classification problems
 
-https://learn.hashicorp.com/collections/terraform/configuration-language
+* Accuracy
 
-* https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
 
-# tips
 
-Below are some other important tips for the official certification:
 
-1. As mentioned earlier, get yourself familiar with Terraform CLI usage. You might see some questions around most commonly used commands like init, plan, apply, destroy, show, taint, sate.
+* Confusion matrix
+* Sensitivity
+* Specificity
+* Precision
+* ROC curve
+* Lift
 
-2. Some questions will be around workspaces, organizing your code with modules, different states (remote, import, taint state), dynamic blocks, count/for_each, provisioners.
 
-3. Remember the important file names used in the Terraform configuration, such as plugin cache directory, terraform state file name, the default location of Terraform configuration file, etc.
 
-4. The exam is just 60 minutes, and you’ve got between 55-60 questions. So, you have to be quick. When in doubt, highlight questions and come back on them later.
----
-__Advertisement :)__
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
----
-
-# h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
