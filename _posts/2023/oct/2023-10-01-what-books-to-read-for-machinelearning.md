@@ -1,10 +1,10 @@
 ---
 layout: post
-title: What books to read for Machine learning
+title: What books I read to learn Machine learning
 subtitle: books For Machine Learning
 show-avatar : false
 permalink: /blog/books-for-machinelearning
-date: 2021-02-23 00:00:00 -0400
+date: 2023-10-09 00:00:00 -0400
 comments: true
 published: true
 categories: []
@@ -14,6 +14,11 @@ tags: [blog]
 
 This is an ever updating list, and this more of list for myself than to share with people.
 I have hardly few of these books and all the information is compiled from fellow learners, industry experts, data scientists.
+
+Maths to prepare
+
+* Essential Math for Data Science - [https://www.amazon.com/Essential-Math-Data-Science-Fundamental/dp/1098102932]
+
 
 Text book 
 
@@ -40,8 +45,9 @@ Text book
 
 ### Other curated list: 
 
-https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md
-https://towardsdatascience.com/data-science-and-ai-books-for-2021-b8665856cb9e
+* https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md  
+
+* https://towardsdatascience.com/data-science-and-ai-books-for-2021-b8665856cb9e
 
 
 
